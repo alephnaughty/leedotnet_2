@@ -1,0 +1,9 @@
+he Web API is for a store that sells 10-20 products that all have varying properties. Users authenticate to the API via OAuth2. Users with the customer role can authenticate and interact with the API to place orders, view/manage orders, and edit their information. Users with the admin role can view and edit users, manage inventory, and manage users. Orders can be placed with or without a payment. When an order is paid, the order should be updated accordingly, and inventory adjusted.
+
+ 
+
+Objectives
+
+ 
+
+Create the basic structure for an n-tier/layered .NET Core Web API Solution that uses the repository pattern, a service layer, dependency injection, unit testing, logging and OAuth2. Utilize best practices for project structure and naming.

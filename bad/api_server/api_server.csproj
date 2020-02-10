@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>api_server.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200204201600_Relations4.cs" />
+    <Compile Remove="Migrations\20200204201600_Relations4.Designer.cs" />
+    <Compile Remove="Migrations\20200204201914_Init23.cs" />
+    <Compile Remove="Migrations\20200204201914_Init23.Designer.cs" />
+    <Compile Remove="Migrations\20200207200433_InitialCreate2.cs" />
+    <Compile Remove="Migrations\20200207200433_InitialCreate2.Designer.cs" />
+    <Compile Remove="Migrations\20200207200925_InitialCreate3.cs" />
+    <Compile Remove="Migrations\20200207200925_InitialCreate3.Designer.cs" />
+    <Compile Remove="Migrations\20200207201428_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200207201428_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200207202245_InitialCreate2.cs" />
+    <Compile Remove="Migrations\20200207202245_InitialCreate2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+
+</Project>
