@@ -1,25 +1,17 @@
-﻿using api_server.Repository;
+﻿using ApiServer.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api_server;
+using ApiServer;
 using Microsoft.Extensions.Logging;
-using api_server.Model;
+using ApiServer.Model;
 using api_server_new.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_server_new.Services
 {
-    public interface IProductService
-    {
-        Task<Product> GetProduct(int id);
-        Task<ActionResult<IEnumerable<Product>>> GetAll();
-        Task<ActionResult<Product>> Get(int id);
-        Task Update(Product ent);
-        Task Add(Product ent);
-        Task<ActionResult<Product>> Delete(int id);
-    }
+
 
     public class ProductService : IProductService
     {

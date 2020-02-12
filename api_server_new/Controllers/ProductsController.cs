@@ -4,15 +4,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using api_server;
-using api_server.Data;
+using ApiServer;
 using System;
-using api_server.Repository;
+using ApiServer.Repository;
 using api_server_new.Repository;
 using api_server_new.Services;
 using Microsoft.Extensions.Logging;
 
-namespace api_server.Controllers
+namespace ApiServer.Controllers
 {
 
     [Route("api/[controller]")]

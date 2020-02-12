@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api_server.Model;
-using api_server.Repository;
+using ApiServer.Model;
+using ApiServer.Repository;
 using api_server_new.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Logging;
 
-namespace api_server.Controllers
+namespace ApiServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

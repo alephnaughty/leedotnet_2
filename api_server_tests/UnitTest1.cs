@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using ApiServer.Repository;
 
 namespace api_server_tests
 {
@@ -12,6 +13,8 @@ namespace api_server_tests
         [Test]
         public void Test1()
         {
+            //IOrderRepository
+            
             Assert.Pass();
         }
     }

@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using api_server;
-using api_server.Data;
-using api_server.Repository;
+using ApiServer;
+using ApiServer.Repository;
 using api_server_new.Repository;
 using api_server_new.Services;
+using ApiServer.DataAccess.SQL;
+using ApiServer.DataAccess.SQL.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,13 +35,11 @@ namespace api_server_new
             services.AddControllers();
 
 
-            services.AddDbContext<ApiContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("apiContext")));
+            services.AddDbContext<ApiContext>(orders=> orders.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("apiContext")));
             //services.AddControllersWithViews();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IOrderLineItemRepository, OrderLineItemRepository>();
 
 
             services.AddScoped<IUserService, UserService>();

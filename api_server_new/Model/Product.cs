@@ -1,10 +1,10 @@
-using api_server.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ApiServer.Model;
 
-namespace api_server
+namespace ApiServer
 {
     public class Product : IEntity
     {
